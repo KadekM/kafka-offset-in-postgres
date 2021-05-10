@@ -36,3 +36,4 @@ object CommandProducerApp extends App {
       .exitCode
   }
 }
+

@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "2.13.4"
+ThisBuild / scalaVersion := "2.13.5"
 ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / organization := "com.example"
 ThisBuild / organizationName := "example"
@@ -16,11 +16,11 @@ lazy val root = (project in file("."))
     scalacOptions += "-Ymacro-annotations",
 
     libraryDependencies ++= Seq(
-      "dev.zio" %% "zio-logging" % "0.5.7",
+      "dev.zio" %% "zio-logging" % "0.5.8",
       "dev.zio" %% "zio-kafka" % "0.14.0",
 
-      "dev.zio" %% "zio-interop-cats" % "2.3.1.0",
-      "org.tpolecat" %% "skunk-core" % "0.0.24"
+      "dev.zio" %% "zio-interop-cats" % "3.0.2.0",
+      "org.tpolecat" %% "skunk-core" % "0.1.1"
     ) ++ circeDeps
   )
 
